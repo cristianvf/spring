@@ -1,0 +1,57 @@
+/**
+ * Gradle configuration Script
+ * Jorge Rodriguez Campos
+ */
+
+apply plugin: 'java'
+
+repositories {
+	mavenCentral()
+	jcenter()
+}  
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8 
+tasks.withType(JavaCompile) {
+	options.encoding = 'ISO-8859-1'
+}
+
+ext { 
+	springVersion='5.0.2.RELEASE'
+	h2Version ='1.4.196'
+	dbcpVersion ='2.1.1'
+}
+
+dependencies {
+	
+	compile "org.springframework:spring-context:$springVersion"
+	compile "org.springframework:spring-webmvc:$springVersion"
+	compile 'commons-validator:commons-validator:1.6'
+	
+	
+	compile 'javax.validation:validation-api:2.0.1.Final'
+	
+	compileOnly 'jstl:jstl:1.2'
+	runtime 'org.sitemesh:sitemesh:3.0.1'
+	compile 'org.slf4j:slf4j-api:1.7.25'
+	runtime 'org.slf4j:slf4j-log4j12:1.7.25'
+	runtime 'com.fasterxml.jackson.core:jackson-core:2.9.3'
+	runtime 'com.fasterxml.jackson.core:jackson-databind:2.9.3'
+}
+
+buildscript {
+	repositories {
+    	jcenter()
+  	}
+	dependencies {
+    	classpath "org.akhikhl.gretty:gretty:+"
+  	}
+}
+
+apply plugin: 'org.akhikhl.gretty'
+
+gretty {
+	loggingLevel = 'DEBUG'
+	jvmArgs = ['-Dlog4j.configuration=file:src/test/resources/log4j.properties']
+}
+

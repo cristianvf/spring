@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+	<context:component-scan base-package="com.jorgerdc.web" />
+
+	<mvc:view-controller path="/" view-name="index"/>
+	<mvc:view-controller path="/formulario" view-name="formulario/ejemploFormulario"/>
+	
+	<mvc:resources mapping="/resources/**" location="/WEB-INF/resources/" cache-period="5"/>
+	
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
+	
+	<!-- Handler adapter for Annotated Controller classes , custom property editor 
+	  para manejo de fechas  y cadenas. -->
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+	<property name="webBindingInitializer" ref="customWebBindingInitializer" />
+		<property name="messageConverters">
+			<list>
+				<bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />
+				<bean class="org.springframework.http.converter.StringHttpMessageConverter" />
+				<bean class="org.springframework.http.converter.FormHttpMessageConverter" />
+				<bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter" />
+				<!-- Habilita Json sin el uso de mvc:annotation-driven -->
+				<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" />
+			</list>
+		</property>
+	</bean>
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<!-- Bean empleado para personalizar el proceso de Binding: fechas, strings, etc. (ver la clase) -->
+	<bean class="com.jorgerdc.web.binding.CustomBindingInitializer" id="customWebBindingInitializer" />
+
+	<!-- bean que contiene los mensajes de validacion: message.properties. Este archivo se encuentra en 
+		raiz del classpath (custom-validator.properties), mismo que contiene a CustomValidations. De ser necesario 
+		se pueden agregar otros archivos particulares de este proyecto. -->
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames" value="custom-validator,validator" />
+	</bean>
+
+</beans>

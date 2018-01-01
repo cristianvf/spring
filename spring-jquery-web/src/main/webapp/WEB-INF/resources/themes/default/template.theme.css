@@ -1,0 +1,55 @@
+
+/** fondo empleado para resaltar el menu negro*/
+#header-bottom { 
+	background:rgb(74,81,85);
+}
+
+/** fondo de la plantilla*/
+#page-wrapper {
+		background: #ffffff;
+}
+
+/**Estilos para personalizar el acordeon y sus botones internos*/
+#accordion-menu-icon span a {
+	background-color: #f3f3f3;
+	border: #ffffff solid 1px;
+}
+
+#accordion-menu-icon span  a span {
+	color: #666;
+}
+
+
+#accordion-menu-icon span a:hover {
+	background-color: #e4e7ea;
+	border-color: #c3c9ce;
+	color: #333;
+}
+
+#accordion-menu-icon span a:active {
+	border-color: #9d9d9d;
+}
+
+/* Opciones para tablas */
+
+table.grid tbody tr td , table.grid thead tr td {
+	 color: #666;
+	 border-color: #ddd;
+}
+
+table.grid thead tr td {
+	background-color: #f9f9f9;
+	color: #000000;
+}
+
+table.grid tbody tr:nth-child(even) {
+	background-color: #fcfcfc;
+}
+
+table.grid tbody tr:nth-child(odd){
+	background-color: #ffffff;
+}
+
+table.grid tbody tr:hover {
+	background-color: #CCE5FF;
+}

@@ -1,0 +1,414 @@
+
+body {
+	font-size: 75%;
+	line-height: 1;
+}
+
+html,body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+}
+
+a:visited,a {
+	text-decoration: none;
+	outline: none;
+}
+
+
+/* Estilos para la primer sección del header*/
+#header-top {
+	height: 18px;
+	padding-bottom: 4px;
+	/**estos valores sobrescriben a los estilos de Jquery*/
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+}
+
+#header-top div {
+	font-weight: normal;
+	font-size: 0.9em;
+	height: 10px;
+	line-height: 28px;
+	text-align: right;
+	padding-right: 15px;
+}
+
+/**Estlos para la segunda sección del header*/
+#header-center {
+	height: 44px;
+	padding-top: 5px;
+	padding-left: 10px;
+	/**estos valores sobrescriben a los de jquery*/
+	border-style: none;
+}
+
+#header-center div.logo {
+	height: 48px;
+	display: block;
+	background-image: url(../images-comun/generic-logo.png);
+	background-repeat: no-repeat;
+	
+}
+
+#header-center div.logo div {
+	float: right; 
+	padding-top: 25px;
+	text-align: right;
+	font-weight: normal;
+	padding-right: 15px;
+}
+
+
+#header-center a span.version {
+	font-weight: normal;
+	font-size: 0.9em;
+	float: right;
+}
+
+#header-center a span.subsistema {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+#header-center a span.numversion {
+	float: right;
+	font-size: 1.3em;
+	float: right;
+	font-weight: bold;
+}
+
+/*tamaño de la fuente del menu*/
+#header-bottom { 
+	font-size: 0.9em;
+}
+
+/**Estilos para el <div> que contiene a todas las secciones de la plantilla #page-wrapper*/
+#page-wrapper {
+	float: left;
+	width: 100%;
+}
+
+/** Columna  izquierda */
+#page-wrapper #columna-izquierda {
+	float: left;
+	margin: 0 0 0 0px;
+	width: 17%;
+	padding: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-style: none;
+}
+
+/**Columna derecha*/
+#page-wrapper  #columna-derecha {
+	float: right;
+	margin: 0 0 0 0px;
+	width: 17%;
+	padding: 0px;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	border-style: none;
+}
+
+#page-wrapper  #main-content {
+	padding: 0px;
+	float: left;
+	width: 66%;
+}
+
+/**Estilos para el footer*/
+#footer {
+	float: left;
+	width: 100%;
+	padding: 5px;
+	font-size: 0.9em;
+	/**sobrescribe los bordes de jquery*/
+	border-bottom-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	font-weight: normal;
+}
+
+/** Estilos para las cajas (box)*/
+.portlet {
+	margin: 10px 5px 5px 5px;
+	padding: 1px;
+}
+
+#page-wrapper #main-content .portlet-content {
+	padding: 10px;
+}
+
+.portlet-header {
+	margin: .1em;
+	text-align: center;
+	padding: 2px;
+}
+
+.portlet-content {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.portlet-header .ui-icon {
+	float: right;
+}
+
+.portlet-menu ul {
+	margin-bottom: 10px;
+}
+
+.portlet-menu ul li {
+	list-style-type: none;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dotted;
+	border-left-style: none;
+	padding: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.portlet-menu.icon-look ul li {
+	background-image: url(../images-comun/games-config-theme.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.portlet .portlet-content .title {
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+/** estilo reloj digital*/
+.jclock {
+	font-size: 17px;
+	padding: 5px 5px 5px 30px;
+	background-position: 40px;
+	font-weight: bold;
+	background-image: url(../images-comun/user-away.png);
+	background-repeat: no-repeat;
+}
+
+/**Estilos para personalizar el acordeon y sus botones internos*/
+#accordion-menu-icon {
+	padding: 0em 2% !important;
+}
+
+#accordion-menu-icon span a {
+	background-repeat: no-repeat;
+	background-position: top;
+	display: block;
+	width: 47%;
+	height: 100px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#accordion ul li {
+	list-style: none;
+}
+
+#accordion-menu-icon span a.icon-left {
+	float: left;
+}
+
+#accordion-menu-icon span a.icon-right {
+	float: right;
+}
+
+#accordion-menu-icon span  a span {
+	margin-top: 60px;
+	float: left;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding-left: 15px;
+}
+
+#accordion-menu-icon span a.tools {
+	background-image: url(../images-comun/Tools.png);
+}
+
+#accordion-menu-icon span a.kuser {
+	background-image: url(../images-comun/kuser.png);
+}
+
+#accordion-menu-icon span  a.kuser span {
+	margin-top: 70px !important;
+}
+
+#accordion-menu-icon span  a.update {
+	background-image:
+		url(../images-comun/system-software-update-3.png);
+}
+
+#accordion-menu-icon span  a.monitor {
+	background-image:
+		url(../images-comun/utilities-system-monitor-3.png);
+}
+
+#accordion-menu-icon span  a.reportes {
+	background-image: url(../images-comun/Chart_5.png);
+}
+
+#accordion-menu-icon span  a.revision-campo {
+	background-image: url(../images-comun/Clipboard_3.png);
+}
+
+.yellow-box {
+	background: #fff6bf;
+	border: #fdd845 solid 1px;
+}
+
+.interior-box {
+	border: solid 1px;
+}
+
+.error {
+	background: #f9e5e6 url(../images-comun/error.png) 10px 50% no-repeat;
+	color: #b50007;
+	border: #e8aaad solid 1px;
+}
+
+.notice {
+	background: #f9f9e5 url(../images-comun/notice.png) 10px 50% no-repeat;
+	color: #828400;
+	border: #e8e3aa solid 1px;
+}
+
+.info {
+	background: #e5ecf9 url(../images-comun/info.png) 10px 50% no-repeat;
+	color: #0055b5;
+	border: #aac6e8 solid 1px;
+}
+
+.success {
+	background: #e9f9e5 url(../images-comun/success.png) 10px 50% no-repeat;
+	color: #1c8400;
+	border: #b4e8aa solid 1px;
+}
+
+.response-msg {
+	padding: 6px 10px 10px 45px;
+	margin: 0 0 10px;
+}
+
+.response-msg ul li {
+	padding: 6px 0px 0px 45px;
+	font-size: 1.2em;
+	list-style-image: url(../images-comun/games-config-theme.png);
+}
+
+.response-msg span {
+	display: block;
+	font-weight: bold;
+	padding: 0 0 4px;
+}
+
+/**Estilo para las barras de titulo horizontales*/
+#main-content #page-title {
+	padding: 5px;
+	margin: 0 0 20px;
+}
+
+#main-content #page-title b {
+	padding: 0;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#main-content .page-title-separator {
+	margin-top: 2px;
+	margin-bottom: 3px;
+	border-top: dotted 1px;
+}
+
+
+.validation-error {
+	background: #f9e5e6 url(../images-comun/error-2.png) 2px 50% no-repeat;
+	color: #b50007;
+	border: #e8aaad solid 1px;
+	display: inline-block;
+	/*position: absolute;*/
+	padding: 2px 2px 2px 20px;
+	margin-bottom: 3px;
+	font-size: 0.9em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.large {
+	width: 95%;
+}
+
+.medium {
+	width: 50%;
+}
+
+.small {
+	width: 30%;
+}
+
+.tiny {
+	width: 15%;
+}
+
+.w5 {
+	width: 5%;
+}
+
+.w10 {
+	width: 10%;
+}
+
+.w15 {
+	width: 15%;
+}
+
+.w20 {
+	width: 20%;
+}
+
+.w30 {
+	width: 30%;
+}
+
+.w40 {
+	width: 40%;
+}
+.w50 {
+	width: 50%;
+}
+.w60 {
+	width: 60%;
+}
+.w70 {
+	width: 70%;
+}
+.w80 {
+	width: 80%;
+}
+.w90 {
+	width: 90%;
+}
+
+/* Opciones para tablas */
+table.grid {
+	border-collapse: collapse;
+}
+
+table.grid tbody tr td , table.grid thead tr td{
+	 padding: 8px;
+	 text-align: center;
+	 border-width: 1px;
+	 border-style: solid;
+}
+table.grid thead tr td {
+	font-weight: bold;
+}

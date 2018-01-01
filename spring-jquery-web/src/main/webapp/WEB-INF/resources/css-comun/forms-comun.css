@@ -1,0 +1,76 @@
+form ul {
+	list-style: none;
+	margin: 0%;
+	padding-top: 15px;
+	padding-left: 0%;
+	padding-right: 0%;
+	width: 100%;
+}
+
+/*3 elements for each row (default)*/
+form ul li {
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+	vertical-align: top;
+	
+}
+
+/*2 elements for each row*/
+form ul.two li {
+	width: 49%;
+}
+
+/*2 elements for each row*/
+form ul.three li {
+	width: 32%;
+}
+
+/*4 elements for each row*/
+form ul.four li {
+	width: 24%;
+}
+
+/*5 elements for each row*/
+form ul.five li {
+	width: 19%;
+}
+
+form ul li label {
+	display: block;
+	margin-bottom: 3px;
+}
+
+form input[type=text] {
+	height: 1.9em;
+}
+
+form input[type=text]:hover, textarea:hover {
+	border: 1px solid;
+}
+
+form input[type=text]:focus, textarea {
+	border: 1px solid;
+	outline-color: inherit;
+	outline-width: 1px;
+}
+
+form fieldset {
+	border-style: solid;
+	border-width: 1px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+
+form fieldset legend {
+	font-size: 1.1em;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.link-form {
+	padding: 3px;'
+}
+
