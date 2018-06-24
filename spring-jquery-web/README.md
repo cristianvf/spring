@@ -1,4 +1,4 @@
-###Notas relevantes del proyecto.
+## Notas relevantes del proyecto.
 
 #####Caracteristicas generales.
 El proyecto hace uso de spring mvc, jquery, jquery UI y sitemesh.
@@ -21,7 +21,7 @@ Para crear un nuevo tema en esta plantilla se realizan los siguientes pasos:
 
 1. Crear o modificar un nuevo tema empleando el themroller de JQueryUI.
 2. Descargar el archivo zip del sitio y descomprimirlo en algun directorio.
-3. Dentro de WEB-INF/resources/themes se deber· crear una nueva carpeta con
+3. Dentro de WEB-INF/resources/themes se deber√° crear una nueva carpeta con
    el nombre del tema.
 4. Copiar los archivos siguiendo la misma estructura que los temas existentes.
    Los scripts principales de jquery y jqueryUI no se requieren copiar ya que estos
@@ -37,14 +37,14 @@ Para crear un nuevo tema en esta plantilla se realizan los siguientes pasos:
       el mismo para todos los temas.
 
 6.  Copiar los siguientes archivos  de estilo para el nuevo tema a partir de otro existente.
-    B·sicamente estos archivos son hojas de estilo que sirven para cambiar principalmente
+    B√°sicamente estos archivos son hojas de estilo que sirven para cambiar principalmente
     los colores de algunos elementos de la plantilla para que estos hagan match con el
     nuevo tema.
     
     -  WEB-INF/resources/themes/<nuevo-tema>/template.theme.css 
 
  
- 7. Editar el archivo WEB-INF/decotators/columna-derecha.jsp   En este archivo se deber‡
+ 7. Editar el archivo WEB-INF/decotators/columna-derecha.jsp   En este archivo se deber√†
     agregar una nueva entrada para habilitar el nuevo tema. El id del elemento a debe
     ser el mismo que el nombre de la carpeta creada en el punto 3. Ejemplo:
     
@@ -55,3 +55,6 @@ Para crear un nuevo tema en esta plantilla se realizan los siguientes pasos:
 
 
    
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3MTUyNjU1NDFdfQ==
+-->
