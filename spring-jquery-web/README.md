@@ -49,13 +49,14 @@ Para crear un nuevo tema en esta plantilla se realizan los siguientes pasos:
     ser el mismo que el nombre de la carpeta creada en el punto 3. Ejemplo:
     ```html
      <li id="set_theme">
-      <a href="javascript:void(0);" id="rojo">Rojo</a>  /li  
+	     <a href="javascript:void(0);" id="rojo">Rojo</a>  
+	 </li>  
     ```
    En este ejemplo, el id tiene como valor 'rojo' y corresponde con el nombre
-   de la carpeta dentro de  WEB-INF/resources/themes/
+   de la carpeta dentro de  ```WEB-INF/resources/themes/```
 
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjY3NzU5OSwtMTcxNTI2NTU0MV19
+eyJoaXN0b3J5IjpbMTA1NzA1NTU2NSwtMTcxNTI2NTU0MV19
 -->
