@@ -44,9 +44,9 @@ Para crear un nuevo tema en esta plantilla se realizan los siguientes pasos:
     -  WEB-INF/resources/themes/<nuevo-tema>/template.theme.css 
 
  
- 7. Editar el archivo WEB-INF/decotators/columna-derecha.jsp   En este archivo se deberà
-    agregar una nueva entrada para habilitar el nuevo tema. El id del elemento a debe
-    ser el mismo que el nombre de la carpeta creada en el punto 3. Ejemplo:
+ 7. Editar el archivo ```WEB-INF/decotators/columna-derecha.jsp```   En este archivo se deberá agregar una nueva entrada para habilitar el nuevo tema. El id del elemento a debe ser el mismo que el nombre de la carpeta creada en el punto 
+#### Ejemplo:
+
     ```html
      <li id="set_theme">
 	     <a href="javascript:void(0);" id="rojo">Rojo</a>  
@@ -58,5 +58,5 @@ Para crear un nuevo tema en esta plantilla se realizan los siguientes pasos:
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NzA1NTU2NSwtMTcxNTI2NTU0MV19
+eyJoaXN0b3J5IjpbLTYxMDkxMjE5MSwtMTcxNTI2NTU0MV19
 -->
